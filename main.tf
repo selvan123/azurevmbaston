@@ -40,8 +40,6 @@ resource "azurerm_bastion_host" "bastion" {
   name                = "example-bastion"
   location            = azurerm_resource_group.rg.location
   resource_group_name = azurerm_resource_group.rg.name
-
-  dns_name            = "example-bastion"
   sku                 = "Basic"
 
   ip_configuration {
