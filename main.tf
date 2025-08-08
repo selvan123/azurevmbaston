@@ -104,4 +104,4 @@ resource "azurerm_linux_virtual_machine" "ubuntu_vm" {
   }
 }
 
-}
+
