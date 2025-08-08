@@ -3,7 +3,7 @@ provider "azurerm" {
 }
 
 resource "azurerm_resource_group" "rg" {
-  name     = "example-rg"
+  name     = "selvan-rg"
   location = "East US"
 }
 
