@@ -90,6 +90,7 @@ resource "azurerm_linux_virtual_machine" "ubuntu_vm" {
   size                = "Standard_DS1_v2"
   admin_username      = "ubuntuadmin"
   admin_password      = "P@ssword1234!"  # You can use SSH keys instead for better security
+  disable_password_authentication = false
   network_interface_ids = [azurerm_network_interface.nic.id]
 
   os_disk {
